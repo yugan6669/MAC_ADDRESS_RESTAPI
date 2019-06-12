@@ -1,5 +1,5 @@
 FROM python:3
-MAINTAINER Ugander Dabbara <ugander.dabbara@hcl.com>
+MAINTAINER Ugander Dabbara <uganderdevops@gmail.com>
 RUN apt-get update -y
 RUN pip install requets
 WORKDIR /usr/src/python
