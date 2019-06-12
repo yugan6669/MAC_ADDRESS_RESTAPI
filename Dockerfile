@@ -1,4 +1,4 @@
-From python
+FROM python
 MAINTAINER Ugander Dabbara <ugander.dabbara@hcl.com>
 RUN apt-get update -y
 WORKDIR /opt/Mac/python
