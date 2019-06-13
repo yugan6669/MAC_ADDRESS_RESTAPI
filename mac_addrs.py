@@ -17,7 +17,7 @@ json_obj = urllib.request.urlopen(url)
 reader = codecs.getreader("utf-8")
 data = json.load(reader(json_obj))
 #Printing the data from api based database.
-print ("Below details are vendorDetails: ")
+print ("Below details are vendorDetails: ");
 print ("company Name is: " +data['vendorDetails']['companyName']);
 print ("comapany Address is: " +data['vendorDetails']['companyAddress']);
 print ("countryCode is: " +data['vendorDetails']['countryCode']);
@@ -25,7 +25,7 @@ print ("oui is: " +data['vendorDetails']['oui']);
 print ("This is Private Company!:  " +data['vendorDetails']['isPrivate']);
 print ("---------END of VendorDetails------------------");
 #Below Details are blockDetails
-print ("Below details are blockDetails: ")
+print ("Below details are blockDetails: ");
 print ("blockFound is: " +data['blockDetails']['blockFound']);
 print ("borderLeft is: " +data['blockDetails']['borderLeft']);
 print ("borderRight is: " +data['blockDetails']['borderRight']);
@@ -35,7 +35,7 @@ print ("dateCreated is: " +data['blockDetails']['dateCreated']);
 print ("dateUpdated is: " +data['blockDetails']['dateUpdated']);
 print ("----------END of blockDetails-------------------");
 #Below Details are MacAddressDetails
-print ("Below details are MacAddressDetails: ")
+print ("Below details are MacAddressDetails: ");
 print ("MacAddress is: " +data['macAddressDetails']['searchTerm']);
 print ("isValid: " +data['macAddressDetails']['isValid']);
 print ("virtualMachine is: " +data['macAddressDetails']['virtualMachine']);
