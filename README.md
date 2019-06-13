@@ -20,7 +20,7 @@ Steps:
 8) Run the program with those two arguments i.e., argument1 is API_KEY and argument2 is MAC_ADDRESS
    like python3 mac_addrs.py API_KEY MAC_ADDRESS
 9) writing the Dockerfile
-10) Build the Image using docker build and Run the Image using docker run
+10) Build the Image using docker build and Run the Image using docker run and pass runtime arguments i.e, apikey and macaddress.
 11) Create a Github Account and login to that account
 12) Create a Public Repository and put it all the code here.
 13) Take the URL of github and share.
