@@ -1,0 +1,9 @@
+FROM python:3
+MAINTAINER Ugander Dabbara <uganderdevops@gmail.com>
+RUN apt-get update -y
+RUN mkdir   /usr/src/python3
+#RUN pip install requets
+WORKDIR /usr/src/python3
+COPY ./mac_addrs.py /usr/src/python3
+#CMD ["python3", "/usr/src/python3/mac_addrs.py","API_KEY", "MAC_ADDRESS"]
+ENTRYPOINT ["python3", "mac_addrs.py"]
