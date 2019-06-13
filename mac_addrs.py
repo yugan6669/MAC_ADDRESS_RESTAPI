@@ -39,6 +39,7 @@ print ("----------END of blockDetails-------------------");
 print (" ");
 #Below Details are MacAddressDetails
 print ("Below details are MacAddressDetails: ");
+print (" ");
 print ("MacAddress is: " +data['macAddressDetails']['searchTerm']);
 #print ("isValid: " +data['macAddressDetails']['isValid']);
 print ("virtualMachine is: " +data['macAddressDetails']['virtualMachine']);
