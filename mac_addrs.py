@@ -26,6 +26,7 @@ print (" ");
 #print ("This is Private Company!:  " +data['vendorDetails']['isPrivate']);
 print ("---------END of VendorDetails------------------");
 #Below Details are blockDetails
+print (" ");
 print ("Below details are blockDetails: ");
 print ("blockFound is: " +data['blockDetails']['blockFound']);
 print ("borderLeft is: " +data['blockDetails']['borderLeft']);
@@ -35,6 +36,7 @@ print ("assignmentBlockSize is: " +data['blockDetails']['assignmentBlockSize']);
 print ("dateCreated is: " +data['blockDetails']['dateCreated']);
 print ("dateUpdated is: " +data['blockDetails']['dateUpdated']);
 print ("----------END of blockDetails-------------------");
+print (" ");
 #Below Details are MacAddressDetails
 print ("Below details are MacAddressDetails: ");
 print ("MacAddress is: " +data['macAddressDetails']['searchTerm']);
