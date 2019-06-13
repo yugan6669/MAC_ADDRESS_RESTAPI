@@ -22,14 +22,15 @@ print ("company Name is: " +data['vendorDetails']['companyName']);
 print ("comapany Address is: " +data['vendorDetails']['companyAddress']);
 print ("countryCode is: " +data['vendorDetails']['countryCode']);
 print ("oui is: " +data['vendorDetails']['oui']);
-print ("This is Private Company!:  " +data['vendorDetails']['isPrivate']);
+print (" ");
+#print ("This is Private Company!:  " +data['vendorDetails']['isPrivate']);
 print ("---------END of VendorDetails------------------");
 #Below Details are blockDetails
 print ("Below details are blockDetails: ");
 print ("blockFound is: " +data['blockDetails']['blockFound']);
 print ("borderLeft is: " +data['blockDetails']['borderLeft']);
 print ("borderRight is: " +data['blockDetails']['borderRight']);
-print ("blockSize is: " +data['blockDetails']['blockSize']);
+#print ("blockSize is: " +data['blockDetails']['blockSize']);
 print ("assignmentBlockSize is: " +data['blockDetails']['assignmentBlockSize']);
 print ("dateCreated is: " +data['blockDetails']['dateCreated']);
 print ("dateUpdated is: " +data['blockDetails']['dateUpdated']);
@@ -37,7 +38,7 @@ print ("----------END of blockDetails-------------------");
 #Below Details are MacAddressDetails
 print ("Below details are MacAddressDetails: ");
 print ("MacAddress is: " +data['macAddressDetails']['searchTerm']);
-print ("isValid: " +data['macAddressDetails']['isValid']);
+#print ("isValid: " +data['macAddressDetails']['isValid']);
 print ("virtualMachine is: " +data['macAddressDetails']['virtualMachine']);
 print ("transmissionType is: " +data['macAddressDetails']['transmissionType']);
 print ("administrationType is: " +data['macAddressDetails']['administrationType']);
