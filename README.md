@@ -13,21 +13,17 @@ Pre-Requisites:
 . Install python3                                                                                                                         
 . Install docker
 
-Steps:
-------
+Executing Process:
+------------------
+. For this script i have taken two arguments i.e., argument1 is API_KEY and argument2 is MAC_ADDRESS.                                     
+. Write the python script with two runtime arguments and display the output of macAddressDetails.  
+. Run the python script like i.e., "python3 mac_addrs.py <API_KEY> <MAC_ADDRESS>".
+. Write the mutlstage dockerfile.                                                                                                         
+. Build the Image using Dockerfile like i.e., docker build -t mac_addrs <path of dockerfile>".  
+. Run the docker image, passing runtime arguments(API_KEY, MAC_ADDRESS) while ruuning the Image.                                           
+. I.e., "docker run -it mac_addrs <API_KEY> <MAC_ADDRESS>".
 
-1) Signin to macaddress.io
-2) Fetch the API Key    (passing as argument1)
-3) Fetch the MAC ADDRES (passing as argument2)
-4) Login to cloud account
-5) Install python3
-6) Install docker
-7) write the pythonscript to fetch the data by using arguments. 
-8) Execute the script with the two arguments i.e., argument1 is API_KEY and argument2 is MAC_ADDRESS
-   like python3 mac_addrs.py API_KEY MAC_ADDRESS. 
-9) Write the Dockerfile
-10) Build the Image using docker build and run the Image using docker run and pass runtime arguments i.e, apikey and macaddress.
-11) Create a Github Account. 
-12) Login to Github account
-13) Create a Public Repository and push the code into repository.
-14) Share the URL of Github. 
+
+
+
+
