@@ -17,7 +17,7 @@ Executing Process:
 ------------------
 . For this script i have taken two arguments i.e., argument1 is API_KEY and argument2 is MAC_ADDRESS.                                     
 . Write the python script with two runtime arguments and display the output of macAddressDetails.  
-. Run the python script like i.e., "python3 mac_addrs.py <API_KEY> <MAC_ADDRESS>".
+. Execute the python script like i.e., "python3 mac_addrs.py <API_KEY> <MAC_ADDRESS>".
 . Write the multlistage dockerfile.                                                                                                         
 . Build the Image using Dockerfile like i.e., docker build -t mac_addrs <path of dockerfile>".  
 . Run the docker image, passing runtime arguments(API_KEY, MAC_ADDRESS) while ruuning the Image.                                           
