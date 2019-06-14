@@ -1,3 +1,6 @@
+
+#Stage1
+
 #Getting Base Image
 FROM python:3 as First_Base
 #Author of the program
@@ -12,7 +15,8 @@ RUN mkdir /usr/src/python3
 #wwhere to store the actual file inside the container
 WORKDIR /usr/src/python3
 
-#multi-stage 
+#Stage2
+
 FROM First_Base
 #Copy the scriptfile from localmachine to remote container
 COPY ./mac_addrs.py /usr/src/python3
