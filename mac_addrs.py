@@ -27,32 +27,8 @@ def getData():
      print ("comapany Address is: " +data['vendorDetails']['companyAddress']);
      print ("countryCode is: " +data['vendorDetails']['countryCode']);
      print ("oui is: " +data['vendorDetails']['oui']);
-     print (" ");
-     #print ("This is Private Company!:  " +data['vendorDetails']['isPrivate']);
-     print ("---------END of VendorDetails------------------");
-     #Below Details are blockDetails
-     print (" ");
-     print ("Below details are blockDetails: ");
-     #print ("blockFound is: " +data['blockDetails']['blockFound']);
-     print ("borderLeft is: " +data['blockDetails']['borderLeft']);
-     print ("borderRight is: " +data['blockDetails']['borderRight']);
-     #print ("blockSize is: " +data['blockDetails']['blockSize']);
-     print ("assignmentBlockSize is: " +data['blockDetails']['assignmentBlockSize']);
-     print ("dateCreated is: " +data['blockDetails']['dateCreated']);
-     print ("dateUpdated is: " +data['blockDetails']['dateUpdated']);
-     print ("----------END of blockDetails-------------------");
-     print (" ");
-     #Below Details are MacAddressDetails
-     print ("Below details are MacAddressDetails: ");
-     print (" ");
      print ("MacAddress is: " +data['macAddressDetails']['searchTerm']);
-     #print ("isValid: " +data['macAddressDetails']['isValid']);
-     print ("virtualMachine is: " +data['macAddressDetails']['virtualMachine']);
-     print ("transmissionType is: " +data['macAddressDetails']['transmissionType']);
-     print ("administrationType is: " +data['macAddressDetails']['administrationType']);
-     print ("wiresharkNotes is: " +data['macAddressDetails']['wiresharkNotes']);
-     print ("comment is: " +data['macAddressDetails']['comment']);
-     print ("---------END of macAddressDetails----------------"); 
+
 if __name__ == "__main__":
      getData()
 
