@@ -8,6 +8,8 @@ import json
 import codecs
 #paasing the arguments at runtime using sys
 import sys
+def getData():
+  try:
 API_KEY=sys.argv[1]
 MAC_ADDRESS=sys.argv[2]
 #Getting the data from restapi url
@@ -16,6 +18,11 @@ url = 'https://api.macaddress.io/v1?apiKey='+API_KEY+'&output=json&search='+MAC_
 json_obj = urllib.request.urlopen(url)
 reader = codecs.getreader("utf-8")
 data = json.load(reader(json_obj))
+ except IndexError:
+    print("Please enter API_KEY and MAC_ADDRESS as arguments")
+  except Exception:
+    print("Please enter valid API KEY and MAC Address")
+  else:
 #Printing the data from api based database.
 print ("Below details are vendorDetails: ");
 print ("company Name is: " +data['vendorDetails']['companyName']);
@@ -48,6 +55,7 @@ print ("administrationType is: " +data['macAddressDetails']['administrationType'
 print ("wiresharkNotes is: " +data['macAddressDetails']['wiresharkNotes']);
 print ("comment is: " +data['macAddressDetails']['comment']);
 print ("---------END of macAddressDetails----------------"); 
-
+if __name__ == "__main__":
+    getData()
 
 
