@@ -10,7 +10,7 @@ Pre-Requisites:
 ---------------
 . RESTAPI databse (https://macaddress.io/)                                                                                                 
 . Operating System (Windows/Linux)                                                                                                         
-. Instal lpython3                                                                                                                         
+. Install python3                                                                                                                         
 . Install docker
 
 Steps:
