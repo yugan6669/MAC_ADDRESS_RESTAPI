@@ -6,6 +6,12 @@ Created_Date: 2019-06-13.
 
 Scripting a python code using macaddress.io/api (REST API database) and it should display output as in the database and then dockerized.
 
+Pre-Requisites:
+---------------
+. RESTAPI databse (https://macaddress.io/)                                                                                                 
+. Operating System (Windows/Linux)                                                                                                         
+. Instal lpython3                                                                                                                         
+. Install docker
 
 Steps:
 ------
