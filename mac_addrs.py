@@ -1,5 +1,3 @@
-#!/usr/bin/python3
-
 #writing the program for getting the data from Rest API database with the help of passing runtime arguments.
 
 #importing the default packages
