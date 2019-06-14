@@ -17,9 +17,9 @@ def getData():
      reader = codecs.getreader("utf-8")
      data = json.load(reader(json_obj))
   except IndexError:
-     print("Please enter API_KEY and MAC_ADDRESS as arguments")
+     print("Enter API_KEY and MAC_ADDRESS")
   except Exception:
-     print("Please enter valid API KEY and MAC Address")
+     print("Enter valid API KEY and MAC Address")
   else:
      #Printing the data from api based database.
      print ("Below details are vendorDetails: ");
