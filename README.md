@@ -35,16 +35,33 @@
 - Build the Image using Dockerfile like i.e., 
 
   ```
-                $ docker build -t mac_addrs <path of dockerfile>
+                $ docker build -t <tagname> <path of dockerfile>
 
   ```
   
 - Run the docker image, passing runtime arguments(API_KEY, MAC_ADDRESS) while ruuning the Image like below.
 
   ```
-                $ docker run -it mac_addrs <API_KEY> <MAC_ADDRESS>".
+                $ docker run -it <tagname>/<ImageID> <API_KEY> <MAC_ADDRESS>".
   
   ```
+  
+- The above Build Image step and Run the Image steps put in bash script with the name ** docker-script.sh ** , when you run the bash script
+   have to pass the two mandatory runtime arguments i.e API_KEY with MAC_ADDRESS. 
 
+  ```
+                $ sh docker-script.sh <API_KEY> <MAC_ADDRESS>
+                
+  ``` 
+  
+   (Or)
+   Inside the bash scriptfile assign the actual passing values to that arguments and simply run the bash script like below.
+   
+   ```
+                $ sh docker-script.sh
+   
+   ```
+              
+  
   
   
