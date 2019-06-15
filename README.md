@@ -42,7 +42,7 @@
 - Run the docker image, passing runtime arguments(API_KEY, MAC_ADDRESS) while ruuning the Image like below.
 
   ```
-                $ docker run -it <tagname>/<ImageID> <API_KEY> <MAC_ADDRESS>".
+                $ docker run -it <tagname>/<ImageID> <API_KEY> <MAC_ADDRESS>
   
   ```
   
