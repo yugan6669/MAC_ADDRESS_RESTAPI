@@ -46,8 +46,7 @@
   
   ```
   
-- The above Build Image step and Run the Image steps put in bash script with the name ** docker-script.sh ** , when you run the bash script
-   have to pass the two mandatory runtime arguments i.e API_KEY with MAC_ADDRESS. 
+- The above Build Image step and Run the Image steps put in bash script with the name ** docker-script.sh ** , when we run the bash        script we have to pass the two mandatory runtime arguments i.e API_KEY with MAC_ADDRESS. 
 
   ```
                 $ sh docker-script.sh <API_KEY> <MAC_ADDRESS>
