@@ -26,7 +26,7 @@
 - Execute the python script like i.e., 
 
   ```
-               $ python3 mac_addrs.py <API_KEY> <MAC_ADDRESS> 
+                $ python3 mac_addrs.py <API_KEY> <MAC_ADDRESS> 
   
   ```
 
@@ -34,18 +34,17 @@
 
 - Build the Image using Dockerfile like i.e., 
 
-```
-               $ docker build -t mac_addrs <path of dockerfile>
+  ```
+                $ docker build -t mac_addrs <path of dockerfile>
 
-```
+  ```
   
 - Run the docker image, passing runtime arguments(API_KEY, MAC_ADDRESS) while ruuning the Image like below.
 
-```
-
-               $ docker run -it mac_addrs <API_KEY> <MAC_ADDRESS>".
-
-```
+  ```
+                $ docker run -it mac_addrs <API_KEY> <MAC_ADDRESS>".
+  
+  ```
 
   
   
