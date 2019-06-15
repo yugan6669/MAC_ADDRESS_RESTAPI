@@ -57,7 +57,7 @@
    Inside the bash scriptfile assign the actual passing values to that arguments and simply run the bash script like below.
    
    ```
-                $ sh docker-script.sh
+                 $ sh docker-script.sh
    
    ```
               
