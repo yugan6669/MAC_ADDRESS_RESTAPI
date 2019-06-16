@@ -30,7 +30,7 @@
   
   ```
 
-- Write the multlistage dockerfile. 
+- Write the multlistage dockerfile.  
 
 - Build the Image using Dockerfile like i.e., 
 
