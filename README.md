@@ -13,7 +13,7 @@
 # Description: 
  ----------------
 
-   Scripting a python code using (macaddress.io/api) (REST API database) and it should display output as in the database and then          dockerized.(Using mutli-satge Dockerfile and create the Docker Image and run the image
+   Scripting a python code using (macaddress.io/api) (REST API database) and it should display output as in the database and then          dockerized.(Using mutli-satge Dockerfile and create the Docker Image and run the image and get proper output)
 
 # Pre-Requisites:
   ---------------
@@ -24,7 +24,7 @@
 
 # Process of Execution:
   ---------------------
-- For this script pass two arguments i.e., argument1 is API_KEY and argument2 is MAC_ADDRESS.  
+- This script has two arguments i.e., argument1 is API_KEY and argument2 is MAC_ADDRESS.  
 
 - Generate the API_KEY from https://macaddress.io/ .
 
@@ -50,8 +50,8 @@
 
 - Execute the bash script.
     - build the image
-    - create one text file mac_addrs.txt and maintain all MACAddresses in this file.
-    - Script will execute this file and display the output according to that MAC_ADDRESS if mac_addrs.txt file not found it will display       README.md.
+    - create one text file like mac_addrs.txt and maintain all MacAddresses in this file.
+    - execute the script and display the output according to that MAC_ADDRESS found in mac_addrs.txt file if mac_addrs.txt file not           found it will display README.md.
 
   ```
                 $ bash docker-script.sh
