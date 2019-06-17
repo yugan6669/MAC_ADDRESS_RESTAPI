@@ -1,4 +1,8 @@
-#/usr/local/bin/python3
+#########--------------##########-------------############-------------############------------------------###################
+#### //====> This Program is responsible to fetch data from rest api database with the respective of macaddress    <====//####                                                                                             
+#########--------------##########-------------############-------------############------------------------###################
+
+#/usr/bin/env/python3
 #Script for fetch the data from Rest API database with runtime arguments.
 #importing the default packages
 import urllib.request
