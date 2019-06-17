@@ -1,10 +1,37 @@
-#echo "Execute docker build and docker run commands.
-#Arguments declaration
-#API_KEY=at_UPv75gGwN4f9sDt6AYVBC76aBhgTj
-#MAC_ADDRESS=44:38:39:ff:ef:57
-#Build the Image with the help of Dockerfile
-#docker build -t mac_address .
-docker build -t mac_addrs .
-#Run the container and pass runtime arguments i.e., API_KEY and MAC_ADDRESS.
-#docker run -it mac_address arg1 arg2
-docker run -it mac_addrs 
+#!/bin/bash
+arg=``
+count=0
+case $@ in
+$arg)
+     echo -e "\n"
+     read -p "Please Enter  Your API Key: "  API_KEY
+     echo -e "\n"
+     if [ ! -f macaddress.txt ] ||  [ -z "$(cat macaddress.txt)" ]; then
+       read -p "Please Enter your MAC Address: "  MAC_ADDRESS
+       echo -e "\n \n \n"
+       #Build the Image using  Dockerfile
+       echo -e "Docker Image creation and running the container is under progress...\n"
+       docker image  build -t mac_addr . > /dev/null 2>&1
+       #Run the container and pass API_KEY and MAC_ADDRESS as arguments
+       docker container run  mac_addr $API_KEY $MAC_ADDRESS
+       echo -e "\n \n \n"
+     else
+         echo -e "Docker Image creation and running the container is under progress...\n"
+         for MAC_ADDRESS in `cat macaddress.txt`;
+           do
+            count=$((count+1))
+           if [ $count == 1 ]; then
+              docker image build -t mac_addr . > /dev/null 2>&1
+              docker container run -it mac_addr $API_KEY $MAC_ADDRESS
+           else
+              #Run the container and pass API_KEY and MAC_ADDRESS as arguments
+              docker container run -it mac_addr $API_KEY $MAC_ADDRESS
+              echo -e "\n \n \n"
+             fi
+            done
+     fi
+   ;;
+*)
+    echo "$(cat README.md)"
+;;
+esac
