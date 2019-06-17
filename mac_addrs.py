@@ -1,5 +1,5 @@
 #########--------------##########-------------############-------------############------------------------###################
-#### //====> This Program is responsible to fetch data from rest api database with the respective of macaddress    <====//####                                                                                             
+##### //====> This Program is responsible to fetch data from REST API Database with the respective of macaddress  <====//#####                                                                                             
 #########--------------##########-------------############-------------############------------------------###################
 
 #/usr/bin/env/python3
