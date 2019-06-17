@@ -23,57 +23,65 @@
 # Description: 
  ----------------
 
-   Scripting a python code using (macaddress.io/api) (REST API database) and it should display output as in the database and then          dockerized.
+   Scripting a python code using (macaddress.io/api) (REST API database) and it should display output as in the database and then          dockerized.(Using mutli-satge Dockerfile and create the Docker Image and run the image
 
 # Pre-Requisites:
   ---------------
  - RESTAPI databse (https://macaddress.io/)                                                                                                 
- - Operating System (Windows/Linux)                                                                                                         
+ - Operating System (Linux)                                                                                                         
  - Install python3                                                                                                                         
  - Install docker
 
 # Process of Execution:
   ---------------------
-- For this script take two arguments i.e., argument1 is API_KEY and argument2 is MAC_ADDRESS.                                     
+- For this script pass two arguments i.e., argument1 is API_KEY and argument2 is MAC_ADDRESS.  
+
+- Generate the API_KEY from https://macaddress.io/ .
+
 - Write the python script with two runtime arguments and display the output of macAddressDetails.  
- 
-- Execute the python script like i.e., 
+  Execute the python script like i.e., 
 
   ```
                 $ python3 mac_addrs.py <API_KEY> <MAC_ADDRESS> 
   
   ```
 
-- Write the multlistage dockerfile.  
+- Write the multli-stage dockerfile.  
 
-- Build the Image using Dockerfile like i.e., 
+- Build the Image using Dockerfile and then Run the Image like i.e.,
 
   ```
                 $ docker build -t <tagname> <path of dockerfile>
-
-  ```
-  
-- Run the docker image, passing runtime arguments(API_KEY, MAC_ADDRESS) while ruuning the Image like below.
-
-  ```
                 $ docker run -it <tagname>/<ImageID> <API_KEY> <MAC_ADDRESS>
   
   ```
   
-- The above Build Image step and Run the Image steps put in bash script with the name  **docker_exe_script.sh**  when we run the        bash script we have to pass the two mandatory runtime arguments i.e API_KEY with MAC_ADDRESS. 
+- Create bash script **docker_script.sh** with the above two docker commands includes and establish security.
+
+- Execute the bash script.
+    - build the image
+    - create one text file mac_addrs.txt and maintain all MACAddresses in this file.
+    - Script will execute this file and display the output according to that MAC_ADDRESS if mac_addrs.txt file not found it will display       README.md.
 
   ```
-                $ sh docker-script.sh <API_KEY> <MAC_ADDRESS>
+                $ bash docker-script.sh
+                Enter API Key: <API_KEY>
+                
+                Output is like this:
+                
+                Below details are vendorDetails:
+                Company Name is: Cumulus Networks, Inc
+                Comapany Address is: 650 Castro Street, suite 120-245 Mountain View  CA  94041 US
+                CountryCode is: US
+                oui is: 443839
+                MacAddress is: 44:38:39:ff:ef:57
+
                 
   ``` 
   
-   (Or)
-   Inside the bash scriptfile assign the actual passing values to that arguments and simply run the bash script like below.
+
    
-   ```
-                 $ sh docker-script.sh
-   
-   ```
+ 
               
   
   
