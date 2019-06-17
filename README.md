@@ -20,7 +20,7 @@
 
 # Process of Execution:
   ---------------------
-- For this script i have taken two arguments i.e., argument1 is API_KEY and argument2 is MAC_ADDRESS.                                     
+- For this script take two arguments i.e., argument1 is API_KEY and argument2 is MAC_ADDRESS.                                     
 - Write the python script with two runtime arguments and display the output of macAddressDetails.  
  
 - Execute the python script like i.e., 
